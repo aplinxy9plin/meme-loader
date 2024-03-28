@@ -1,14 +1,13 @@
+import React from "react";
 import { StoryFn, Meta } from "@storybook/react";
-import MemeLoader from "./MemeLoader";
+import { MemeLoader } from "./MemeLoader";
 
 export default {
   title: "MemeLoader/Memes",
   component: MemeLoader,
 } as Meta<typeof MemeLoader>;
 
-const Template: StoryFn<typeof MemeLoader> = (args) => (
-  <MemeLoader {...args} />
-);
+const Template: StoryFn<typeof MemeLoader> = (args) => <MemeLoader {...args} />;
 
 export const MemeTestDefault = Template.bind({});
 MemeTestDefault.args = {

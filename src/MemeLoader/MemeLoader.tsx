@@ -1,9 +1,9 @@
-import { useState, FC } from "react";
+import React, { useState, FC } from "react";
 import "./MemeLoader.css";
 import { MemeLoaderProps } from "./MemeLoader.types";
-import { memes } from "../memes";
+import { memes } from "./memes";
 
-const SmartRating: FC<MemeLoaderProps> = ({
+export const MemeLoader: FC<MemeLoaderProps> = ({
   meme = "racoon",
   title,
   description,
@@ -54,5 +54,3 @@ const SmartRating: FC<MemeLoaderProps> = ({
     </div>
   );
 };
-
-export default SmartRating;

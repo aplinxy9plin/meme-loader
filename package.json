@@ -1,15 +1,15 @@
 {
   "name": "meme-loader",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "description": "",
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "types": "dist/types/index.d.ts",
   "scripts": {
-    "rollup": "rollup -c --bundleConfigAsCjs",
     "test": "jest",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "rimraf dist && rollup -c --bundleConfigAsCjs"
   },
   "author": "AplinXy9plin",
   "license": "MIT",

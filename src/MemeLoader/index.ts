@@ -1,1 +1,1 @@
-export {default} from './MemeLoader';
+export * from './MemeLoader';
