@@ -7,6 +7,9 @@
 - Fully customizable
 - Easy to use
 
+![demonstration](demo.gif)
+
+
 ## Installation
 
 #### npm
